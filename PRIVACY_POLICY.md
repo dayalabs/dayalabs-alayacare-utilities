@@ -1,10 +1,10 @@
-# Privacy Policy for Vibe AlayaCare Extension
+# Privacy Policy for Dayalabs Alayacare Utilities
 
 **Last Updated:** October 24, 2025
 
 ## Overview
 
-Vibe AlayaCare Extension ("the Extension") is committed to protecting your privacy. This privacy policy explains how we handle information when you use our Chrome extension.
+Dayalabs Alacare Utilities ("the Extension") is committed to protecting your privacy. This privacy policy explains how we handle information when you use our Chrome extension.
 
 ## Information Collection and Use
 
@@ -80,6 +80,8 @@ If you have any questions or concerns about this privacy policy, please contact:
 
 This Extension complies with:
 - Chrome Web Store Developer Program Policies
+- General Data Protection Regulation (GDPR)
+- California Consumer Privacy Act (CCPA)
 - Other applicable privacy laws
 
 ## Summary
