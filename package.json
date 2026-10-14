@@ -1,0 +1,7 @@
+{
+  "name": "dayalabs-alayacare-utilities",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}
