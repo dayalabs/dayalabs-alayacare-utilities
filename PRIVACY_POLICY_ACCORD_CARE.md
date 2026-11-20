@@ -39,7 +39,7 @@ The Extension requests **no browser permissions**. Its content scripts run only 
 
 ## Data Storage
 
-The Extension stores no claim or client data. The only things it keeps in the browser are:
+The Extension stores no claim records (no client names, amounts or journal entries) and sends nothing anywhere. What it does keep on the device is limited to AlayaCare ids for the remembered view and, when something fails, error details in the browser's developer console:
 
 - **The panel's selected view** ("By account" or "Journal"), in the browser tab's session storage (`sessionStorage`), with the AlayaCare ids of the page it was picked on (funder, claim and, on a service line's page, the service line). One entry, overwritten by the next choice, and cleared by the browser when the tab is closed
 - **Optional diagnostic flags**, which the Extension only reads, never writes. With one on, the Extension also writes diagnostic details (such as a Find claim search's text and result count) to the browser's developer console
