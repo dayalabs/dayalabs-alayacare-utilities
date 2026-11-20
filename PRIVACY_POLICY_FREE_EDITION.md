@@ -1,6 +1,6 @@
 # Privacy Policy for Free Edition - Daya utilities for AlayaCare
 
-**Last Updated:** November 17, 2026
+**Last Updated:** November 20, 2026
 
 ## Overview
 
@@ -78,8 +78,8 @@ The Extension requests one permission:
   are sent.
 
 It requests no `host_permissions`. Its content scripts run only on AlayaCare sites:
-`*.alayacare.com` and `*.alayacare.ca`, including their `staging` and `uat` sites. The
-Extension does nothing on any other website.
+`*.alayacare.com`, `*.alayacare.ca`, `*.alayacare.com.au` and `*.alayacare.co.nz`,
+including their `staging` and `uat` sites. The Extension does nothing on any other website.
 
 ## Data Storage
 
@@ -143,14 +143,14 @@ This Extension:
 - ✓ Otherwise makes only same-origin requests to AlayaCare's own APIs, within the user's
   existing session
 - ✓ Requests only the `storage` permission, and no `host_permissions`
-- ✓ Runs content scripts only on `*.alayacare.com` and `*.alayacare.ca`, including their
-  `staging` and `uat` sites
+- ✓ Runs content scripts only on `*.alayacare.com`, `*.alayacare.ca`, `*.alayacare.com.au`
+  and `*.alayacare.co.nz`, including their `staging` and `uat` sites
 - ✓ Complies with Chrome Web Store policies
 
 **Permissions Justification:**
 
-- Content-script matches: limited to AlayaCare's own domains, `*.alayacare.com` and
-  `*.alayacare.ca`, where the features add their buttons and call AlayaCare's same-origin
-  APIs.
+- Content-script matches: limited to AlayaCare's own domains, `*.alayacare.com`,
+  `*.alayacare.ca`, `*.alayacare.com.au` and `*.alayacare.co.nz`, where the features add
+  their buttons and call AlayaCare's same-origin APIs.
 - `storage`: required to save the user's bookmarks (`chrome.storage.sync`) and to hold
   usage statistics until they are sent (`chrome.storage.local`).
