@@ -1,6 +1,6 @@
 # Privacy Policy for AccordCare - Daya utilities for AlayaCare
 
-**Last Updated:** November 19, 2026
+**Last Updated:** November 20, 2026
 
 ## Overview
 
@@ -29,7 +29,7 @@ The Extension operates entirely within your authenticated AlayaCare session, and
    - **PDF:** a print view opened in the browser's print dialog, which you can save as a PDF on your computer. Its header shows the claim number, the **client's name** and the **payer**, the service lines covered and the export time
 
    The Extension builds both files inside your browser and sends them nowhere. Once saved, they are files on your computer like any other, under your organization's own data-handling rules
-3. **Find claim:** a button in AlayaCare's top bar opens a search box. What you type (a claim id or number) is sent to AlayaCare's own Medicaid claim listing, on the same AlayaCare site you are logged into, and the matching claims are listed with their number, version, client name, payer and status. Each result links to the claim's page; a copy-link button copies that page's address to your clipboard
+3. **Find claim:** a button in AlayaCare's top bar opens a search box. What you type is sent to AlayaCare's own Medicaid claim listing, which matches it against claim numbers and internal control numbers (ICN, the number the payer assigns); when it is all digits, it is also looked up as a claim id. Both lookups go to the same AlayaCare site you are logged into. The matching claims are listed with their number, version, ICN, client name, payer and status, and which of those the search matched. Each result links to the claim's page; a copy-link button copies that page's address to your clipboard
 
 All network requests go to the AlayaCare domain the user is logged into. The Extension makes no external network calls and uses no external servers.
 
@@ -42,7 +42,8 @@ The Extension requests **no browser permissions**. Its content scripts run only 
 The Extension stores no claim or client data. The only things it keeps in the browser are:
 
 - **The panel's selected view** ("By account" or "Journal"), in the browser tab's session storage (`sessionStorage`), with the AlayaCare ids of the page it was picked on (funder, claim and, on a service line's page, the service line). One entry, overwritten by the next choice, and cleared by the browser when the tab is closed
-- **Optional diagnostic flags**, which the Extension only reads, never writes. With one on, the Extension also writes diagnostic details (such as a Find claim search's text and result count) to the browser's developer console; they stay on the device
+- **Optional diagnostic flags**, which the Extension only reads, never writes. With one on, the Extension also writes diagnostic details (such as a Find claim search's text and result count) to the browser's developer console
+- **Error messages in the developer console:** whether or not a flag is on, when a Find claim search or a copy-link fails, the Extension writes the error to the browser's developer console. A failed search's error includes the search text and AlayaCare's error response. Like the diagnostic details, these stay on the device
 
 Exported CSV and PDF files are saved on your computer by your own action, as described above.
 
